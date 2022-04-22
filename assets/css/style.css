@@ -60,6 +60,8 @@ body{
     padding-left: 10px;
     padding-right: 20px;
 }
+
+
 .logoMenu{
     display: flex;
     flex-direction: row;
@@ -80,7 +82,7 @@ body{
     justify-content: center;
     align-items: center;
     justify-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 
 }
 
@@ -141,12 +143,15 @@ body{
     margin: 5px;
 }
 
+.pad{
+    padding: 0;
+}
 
 .video{
     padding: 10px;
     padding-top: 20px;
 }
-/*footer*/
+/*--------------footer----------*/
 .pie{
     grid-area: footer;
     background-color: #ffffff;
@@ -164,7 +169,7 @@ body{
 /*-----------Servicios---------*/
 .boton__servicios{
     text-decoration: none;
-    width: 80px;
+    width: 100px;
     border-radius: 4px;
     background-color: #ebebe4;
     border: none;
@@ -214,8 +219,17 @@ body{
     align-items: center;
 
 }
+.cajas{
+    font-size: 20px;
+}
 .cajas input{
-    width: 200px;
+    width: 200px;   
+
+}
+.cajas textarea{
+    width: 250px;
+    height: 100px;
+    font-size: 20px;
 
 }
 
@@ -231,6 +245,39 @@ body{
     padding: 15px;
     margin: 5px;
 }
+
+
+/*------------animaciones--------------*/
+.title-contenido{
+    opacity: 0;
+    animation: revealText .5s forwards; 
+}
+
+.title-2{
+    animation-delay: .175s;
+}
+.title-3{
+    animation-delay: .25s;
+}
+.title-4{
+    animation-delay: .325s;
+}
+.title-5{
+    animation-delay: .500s;
+}
+
+@keyframes revealText {
+    from{
+        transform: translateY(20px); 
+    }
+    to{
+        opacity: 1;
+        transform: none; 
+    }
+}
+
+/*--------------------------------*/
+
 
 
 /*-----------------REsponsive-------------------------*/
@@ -315,6 +362,7 @@ body{
         border-radius: 10px;
         background-color: #A50050;
         color: #ffffff;
+        transition: 2s;
     }
     .primeraLinea{
         padding-top: 100px;
@@ -338,7 +386,7 @@ body{
     .posicionIzq{
         display: grid;
         grid-template-rows: auto auto;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto 20px;
         grid-template-areas: "img h3"
                             "img p"
                             "btn btn";
