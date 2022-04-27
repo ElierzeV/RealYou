@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+*{
+    font-style: normal;
+    font-family: "Belleza",Arial, Helvetica, sans-serif;
+}
+html,body,footer{
+    overflow-x:hidden;
+}
+.body{
+padding: 1;
+}
+
+/*redimensión contenido*/
+/*REdimensionar RS*/
+.redimensionRs{
+    width: 40px;
+    height: 40px;
+}
+
+
+/*redimensionar logo*/
+.redi_logo{
+    width: 80px;
+    height: 80px;
+}
+
+/*redimensionar foto*/
+.redimenFoto{
+    width: 250px;
+    height: 350px;
+}
+
+/*colores pagina*/
+.lblanco{
+    color:#fff;
+}
+
+.colorTotal{
+    background-color: #6F263D;
+}
+.colorBlanco{
+    background-color: #fff;
+    color: black;
+}
+.colorSecundario{
+    background-color: #6F263D;
+    color: #fff;
+}
+
+/*padding para la primera linea de la pagina*/
+.pad{
+    padding-top: 120px;
+}
+
+.pading{
+    padding-right: 120px;
+}
+/*justificar contenido*/
+.text-justify{
+    text-align: justify;
+}
+
+/*raya footer*/
+.rayita{
+    height: 3px;
+    background-color: #6F263D;
+}
+/*boton*/
+
+.btn{
+    height: 50px;
+    text-align: center;
+}
+
+.borde{
+    border-radius: 10px;
+}
+
+
+/*------------animaciones--------------*/
+.title-contenido{
+    opacity: 0;
+    animation: revealText .5s forwards; 
+}
+
+.title-2{
+    animation-delay: .175s;
+}
+.title-3{
+    animation-delay: .25s;
+}
+.title-4{
+    animation-delay: .325s;
+}
+.title-5{
+    animation-delay: .500s;
+}
+
+@keyframes revealText {
+    from{
+        transform: translateY(20px); 
+    }
+    to{
+        opacity: 1;
+        transform: none; 
+    }
+}
+
+/*--------------------------------*/
+

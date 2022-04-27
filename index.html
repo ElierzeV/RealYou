@@ -3,98 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real You</title>
     <!--Icono para la pagina-->
     <link rel="icon" type="image/png" href="./assets/img/favicon-32x32.png" sizes="32x32" />
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
-    <div class="contenedor">
-        <!--Cabecera-->
-        <header class="cabecera">
-            <div class="logoMenu">
-                <div class="logo">
-                    <a href="#"><img class="redi_logo" src="./assets/img/logo.PNG" alt="logo"></a>
-                    
-                </div>
-                <nav class="menu">
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="./pages/servicios.html">Servicios</a></li>
-                        <li><a href="./pages/review.html">Review</a></li>
-                        <li><a href="./pages/blog.html">Blog</a></li>
-                        <li><a href="./pages/contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
+<body class="container-fluid p-0">
+    <div class="colorTotal">
+        <header>
+            <div class="p-0">
+                <nav class="navbar navbar-light bg-light fixed-top">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"><img class="redi_logo" src="./assets/img/logo.PNG" alt="logo"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <div class="img-fluid redi_logo">
+                                    <img class="redi_logo" src="./assets/img/logo.PNG" alt="logo">
+                                </div>
+                            
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./pages/servicios.html">Servicios</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./pages/review.html">Review</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./pages/blog.html">Blog</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                  </nav>
             </div>
         </header>
+    
+    
+        <section class="pad">
+            <!--Datos sobre que se hace-->
+            <div class="colorSecundario text-justify p-4  row justify-content-center">
+                <h1 class="text-center title-contenido title col-md-10" >¿Por qué solicitar una asesoría de imagen?</h1>
+                <br>
+                <p class=" title-contenido title-2 col-md-10">Para aprender a potenciar tus cualidades, llamando la atención a tus puntos fuertes o lo que más te gusta de ti, y bajando el volumen a las áreas que no te agradan tanto. </p>
+                <br>
+                <p class="title-contenido title-3 col-md-10">Para desarrollar tu estilo personal: Christian Dior dijo una vez que “El estilo es una forma de decir quién eres sin tener que hablar”. Desarrollar tu estilo propio es un viaje de autoconocimiento, ¡y yo estoy dispuesta a acompañarte! 
+                </p> 
+                <br>  
+                <p class="title-contenido title-4 col-md-10">Nuestra misión será identificar un estilo que conjugue tus intereses, estilo de vida y ambiente, construir una imagen coherente de acuerdo a lo que te importa y defiendes, y también divertirte y aprender en el camino.
+                </p> 
+            </div>
 
-        <!--central-->
-
-        <section class="contenido title">
-            <article  class="articulo">
-                
-                <!--Datos sobre que se hace-->
-                <div class="informacion primeraLinea">
-                    <h1 class="title-contenido title" >¿Por qué solicitar una asesoría de imagen?</h1>
-                    <br>
-                    <p class="title-contenido title-2">Para aprender a potenciar tus cualidades, llamando la atención a tus puntos fuertes o lo que más te gusta de ti, y bajando el volumen a las áreas que no te agradan tanto. </p>
-                    <br>
-                    <p class="title-contenido title-3">Para desarrollar tu estilo personal: Christian Dior dijo una vez que “El estilo es una forma de decir quién eres sin tener que hablar”. Desarrollar tu estilo propio es un viaje de autoconocimiento, ¡y yo estoy dispuesta a acompañarte! 
-                    </p> 
-                    <br>  
-                    <p class="title-contenido title-4">Nuestra misión será identificar un estilo que conjugue tus intereses, estilo de vida y ambiente, construir una imagen coherente de acuerdo a lo que te importa y defiendes, y también divertirte y aprender en el camino.
-                    </p> 
-
-                </div>
-                 <!--informacion asesora-->
-                 <div class="quienFoto">
-                    <div class="informacion rayita quienSoy">
-                        <h1 class="title-contenido title">¿Quién soy?</h1>
+            <!--informacion asesora-->
+            <div class="colorBlanco text-justify row p-3 justify-content-center">
+                    <div class="row col-md-6 align-end">
+                        <h1 class="text-center title-contenido title">¿Quién soy?</h1>
                         <br>
                         <p class="title-contenido title-2">Mi nombre es Karelys Cortez, y me formé como Asesora de imagen con el método de Project Glam. Mi labor como asesora y consultora busca ayudarte a destacar tus puntos fuertes y bajarle el volumen a los puntos que quieres trabajar para fortalecer. Si estás aquí leyendo esto, quiere decir que sabes que una adecuada imagen personal puede ayudarte a lograr tus objetivos. Si estás list@ para iniciar tu viaje,¡conversemos! 
                         </p>
                         <br>
-                        <a href="https://api.whatsapp.com/send?phone=+56943865325&text=Hola,%20Â¿me%20puedes%20ayudar?" class="button title-content title-3" target="_blank">Escríbeme</a>
+                        <a class="btn btn-light d-grid gap-2 col-5 mx-auto colorSecundario" href="https://api.whatsapp.com/send?phone=+56943865325&text=Hola,%20Â¿me%20puedes%20ayudar?" target="_blank">Escríbeme</a>
                         
                     </div>
                     <!--Imagen persona-->
-                    <div class="imagenId rayita">
-                        <div class="title-contenido title-2" >
-                            <img class="redimenFoto " src="./assets/img/kar1.png " alt="" width="500px" >
+                    <div class="text-center col-md-4">
+                        <div class="" >
+                            <img class="redimenFoto" src="./assets/img/kar1.png " alt="" width="200px" >
                         </div>
                         <!--identificación persona-->
-                        <div class="pieFoto title-contenido title-3">
+                        <div class="title-contenido title-3">
                             <h5 class="">Karelys Cortez</h5>
                             <h5 class="">Asesora de imagen</h5>
                         </div>
                     </div>
-                 </div>
+                </div>
+                
 
-            </article>
-            
-            <div class="redim video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/i5cMUyLVd34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
             </div>
-        
+                
         </section>
+        <!--linea del footer-->
+        <div class="rayita"></div>
 
-
-        <!--footer-->
-        <footer class="pie">
+        <footer class="colorBlanco text-center col-xs-12 p-0">
             <h5>Redes Sociales</h5>
-            <div class="Rs">
+            <div class="">
                 <a href="https://www.instagram.com/realyou_bykc/?hl=es-la"><img src="./assets/img/redes/instagram.png" class="redimensionRs" alt=""></a>
                 <i class="icon"></i>
-                <a href="https://api.whatsapp.com/send?phone=+56943865325&text=Hola,%20Â¿me%20puedes%20ayudar?" class="rslink"><img src="./assets/img/redes/whatsapp.png" class="redimensionRs" alt=""></a>
+                <a class="" href="https://api.whatsapp.com/send?phone=+56943865325&text=Hola,%20Â¿me%20puedes%20ayudar?" ><img src="./assets/img/redes/whatsapp.png" class="redimensionRs" alt=""></a>
             </div>
             <br>
-            <div class="copyr">
+            <div class="copyr p-2">
                 <p>© Todos los derechos reservados. Desarrollado por Elierze Valero. 2022</p>
             </div>
         </footer>
     </div>
-   
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
