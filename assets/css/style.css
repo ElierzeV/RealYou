@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
 
 *{
-    margin: 0;
-    padding: 0;
     font-style: normal;
     font-family: "Belleza",Arial, Helvetica, sans-serif;
+}
+html,body,footer{
+    overflow-x:hidden;
+}
+.body{
+padding: 1;
 }
 
 /*redimensión contenido*/
@@ -14,21 +18,11 @@
     height: 40px;
 }
 
-/*redimensionar video*/
-.redim{
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-iframe{
-    width: 100%;
-    height: 100%;
-}
 
 /*redimensionar logo*/
 .redi_logo{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 /*redimensionar foto*/
@@ -37,213 +31,50 @@ iframe{
     height: 350px;
 }
 
-/*---------Equipos moviles horizontal-------------*/
-/*estructura web*/
-.contenedor{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px auto 150px;
-    grid-template-areas: "header header"
-                         "main main"
-                         "footer footer";
+/*colores pagina*/
+.lblanco{
+    color:#fff;
 }
 
-body{
+.colorTotal{
     background-color: #6F263D;
-    color:#ffffff;
-   
 }
-/*header*/
-.cabecera{
-    grid-area: header;
-    background-color: #ffffff;
-    padding-left: 10px;
-    padding-right: 20px;
+.colorBlanco{
+    background-color: #fff;
+    color: black;
 }
-
-
-.logoMenu{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between  ;
-}
-.menu ul {
-    list-style: none;
-}
-
-/*principal contenido*/
-.contenido{
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
-    flex-wrap:nowrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    padding-bottom: 0px;
-
-}
-
-.imagenId{
-    display: flex;
-    flex-direction: column;
-    flex-wrap:nowrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    padding-bottom: 20px;
-}
-
-.pieFoto{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-items: center;
-    font-size: 20px;
-
-}
-/**/
-.informacion{
-    display: flex;
-    flex-direction: column;
-    flex-wrap:nowrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    padding: 20px;
-}
-
-.informacion p{
-    text-align: justify;
-}
-.informacion h1{
-    font-size: 30px;
-    text-align: center;
-}
-
-.rayita{
-    background-color: #ffffff;
-    color: #000000;
-}
-.button {
-    text-decoration: none;
-    width: 100px;
-    border-radius: 4px;
+.colorSecundario{
     background-color: #6F263D;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 18px;
-    padding: 15px;
-    margin: 5px;
+    color: #fff;
 }
 
+/*padding para la primera linea de la pagina*/
 .pad{
-    padding: 0;
+    padding-top: 120px;
 }
 
-.video{
-    padding: 10px;
-    padding-top: 20px;
+.pading{
+    padding-right: 120px;
 }
-/*--------------footer----------*/
-.pie{
-    grid-area: footer;
-    background-color: #ffffff;
-    padding: 20px;
-    text-align: center;
-}
-.pie p{
-    color: #000000;
-}
-.pie h5{
-    font-size: 20px;
-    color: #000000;
-    
-}
-/*-----------Servicios---------*/
-.boton__servicios{
-    text-decoration: none;
-    width: 100px;
-    border-radius: 4px;
-    background-color: #ebebe4;
-    border: none;
-    color: #000000;
-    text-align: center;
-    font-size: 18px;
-    padding: 15px;
-    margin: 5px;
-}
-
-/*----------------------review---------------------------*/
-
-.review{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
-.tarjeta{
-    width: 90%;
-    height: 100%;
-    padding: 10px;
-    margin: 10px;
+/*justificar contenido*/
+.text-justify{
     text-align: justify;
-    background-color: #ffffff;
-    color: #6F263D;
-    border-radius: 10px;
-}
-.cursiva{
-    font-style: italic;
-}
-.review h1{
-    font-size: 30px;
-    text-align: center;
 }
 
-/*-----------------contacto-----------------------*/
-
-.formulario{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-
-}
-.cajas{
-    font-size: 20px;
-}
-.cajas input{
-    width: 200px;   
-
-}
-.cajas textarea{
-    width: 250px;
-    height: 100px;
-    font-size: 20px;
-
-}
-
-.botones input {
-    text-decoration: none;
-    width: 100px;
-    border-radius: 4px;
+/*raya footer*/
+.rayita{
+    height: 3px;
     background-color: #6F263D;
-    border: none;
-    color: #FFFFFF;
+}
+/*boton*/
+
+.btn{
+    height: 50px;
     text-align: center;
-    font-size: 18px;
-    padding: 15px;
-    margin: 5px;
+}
+
+.borde{
+    border-radius: 10px;
 }
 
 
@@ -278,163 +109,3 @@ body{
 
 /*--------------------------------*/
 
-
-
-/*-----------------REsponsive-------------------------*/
-
-/*movil vertical*/
-@media (min-width:480px){
-    .redimenFoto{
-        width: 350px;
-        height: 450px;
-    }
-    .informacion{
-        padding: 50px;
-    }
-    .video{
-        width: 350px;
-        height: 200px;
-    }
-
-}
-/*tablet pequeña*/
-@media (min-width:600px){
-    .video{
-        width: 550px;
-        height: 300px;
-    }
-    .menu ul{
-        padding: 30px;
-    }
-    .menu ul li{
-        display: inline-block;
-        padding: 10px;
-        text-align: center;
-       
-    }
-    .menu ul li a{
-        text-decoration: none;
-        font-weight: bold;
-        color: #6F263D;
-        font-size: 20px;
-    }
-    .cajas input{
-        width: 250px;
-        font-size: 17px;
-    }
-    .informacion p{
-        font-size: 18px;
-    }
-    
-}
-
-/*monitor*/
-@media (min-width:1024px){
-    .redi_logo{
-        width: 150px;
-        height: 150px;
-    }
-    .cabecera{
-        height: 150px;
-        width: 100%;
-        position: fixed;
-        z-index: 100;
-    }
-    .logoMenu{
-        padding-left: 150px;
-        padding-right: 150px;
-    }
-    .logo{
-        padding: 0;
-    }
-    .menu{
-        padding-top: 20px;
-    }
-    .redimenFoto{
-        width: 350px;
-        height: 450px;
-    }
-    .menu ul li a{
-        padding: 8px;
-    }
-
-    .menu ul li a:hover{
-        border-radius: 10px;
-        background-color: #A50050;
-        color: #ffffff;
-        transition: 2s;
-    }
-    .primeraLinea{
-        padding-top: 100px;
-    }
-    .quienFoto{
-        display: flex;
-        flex-direction: row;
-    }
-    .informacion{
-        padding-left: 200px;
-        padding-right: 200px;
-    }
-    .quienSoy{
-        order: 2;
-        padding-left: 0;
-    }
-    .imagenId{
-        order: 1;
-        padding-left: 200px;
-    }
-    .posicionIzq{
-        display: grid;
-        grid-template-rows: auto auto;
-        grid-template-columns: auto auto 20px;
-        grid-template-areas: "img h3"
-                            "img p"
-                            "btn btn";
-    }
-    /*aqui quedé, dar dimensiones a los grid arriba para que queda mas centrado*/
-    .posicionIzq img{
-        grid-area: img;
-        padding-right: 50px;
-    }
-
-    .posicionIzq h3{
-        grid-area: h3;
-
-    }
-    .posicionIzq p{
-        grid-area: p;
-        padding-top: 10px;
-    }
-    .boton__servicios{
-        grid-area: btn;
-    }
-
-    .posicionDer{
-        display: grid;
-        grid-template-rows: auto auto;
-        grid-template-columns: auto auto auto;
-        grid-template-areas: "h3 img"
-                            "p img"
-                            "btn btn";
-    }
-    .posicionDer img{
-        grid-area: img;
-        padding-left: 50px;
-    }
-
-    .posicionDer h3{
-        grid-area: h3;
-
-    }
-    .posicionDer p{
-        grid-area: p;
-        padding-top: 10px;
-    }
-    .boton__servicios{
-        grid-area: btn;
-    }
-    
-}
-
-
-  
