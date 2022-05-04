@@ -1,0 +1,51 @@
+
+.body{
+    padding: 1;
+}
+    
+
+/*colores pagina*/
+.lblanco{
+    color:$colorBlanco;
+}
+
+.colorTotal{
+    background-color: $colorPrincipal;
+}
+.colorBlanco{
+    background-color: $colorBlanco;
+    color: $colorNegro;
+}
+.colorSecundario{
+    background-color: $colorPrincipal;
+    color: $colorBlanco;
+}
+
+/*padding para la primera linea de la pagina*/
+.pad{
+    padding-top: 120px;
+}
+
+.pading{
+    padding-right: 120px;
+}
+/*justificar contenido*/
+.text-justify{
+    text-align: justify;
+}
+
+/*raya footer*/
+.rayita{
+    height: 3px;
+    background-color: $colorPrincipal;
+}
+/*boton*/
+
+.btn{
+    height: 50px;
+    text-align: center;
+}
+
+.borde{
+    border-radius: 10px;
+}

@@ -1,0 +1,73 @@
+
+/*------------animaciones texto--------------*/
+.title-contenido{
+    opacity: 0;
+    animation: revealText .5s forwards; 
+}
+
+.title-2{
+    animation-delay: .175s;
+}
+.title-3{
+    animation-delay: .25s;
+}
+.title-4{
+    animation-delay: .325s;
+}
+.title-5{
+    animation-delay: .500s;
+}
+
+@keyframes revealText {
+    from{
+        transform: translateY(20px); 
+    }
+    to{
+        opacity: 1;
+        transform: none; 
+    }
+}
+
+
+/*------------animaciones boton--------------*/
+
+.button {
+    display: inline-block;
+    border: none;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    
+  }
+  
+  .button span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: url(../img/contenido/flecha-correcta.png);
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .button:hover{
+    background-color: $colorBlanco;
+  }
+  
+  .button:hover span {
+    color: $colorNegro;
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+      
+    opacity: 1;
+    right: 0;
+  }
+
+
+/*--------------------------------*/

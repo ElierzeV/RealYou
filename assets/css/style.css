@@ -1,153 +1,177 @@
-@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Belleza&display=swap");
+* {
+  font-style: normal;
+  font-family: "Belleza",Arial, Helvetica, sans-serif;
+}
 
-*{
-    font-style: normal;
-    font-family: "Belleza",Arial, Helvetica, sans-serif;
-}
-html,body,footer{
-    overflow-x:hidden;
-}
-.body{
-padding: 1;
+html, body, footer {
+  overflow-x: hidden;
 }
 
 /*redimensión contenido*/
 /*REdimensionar RS*/
-.redimensionRs{
-    width: 40px;
-    height: 40px;
+.redimensionRs {
+  width: 40px;
+  height: 40px;
 }
 
-
 /*redimensionar logo*/
-.redi_logo{
-    width: 80px;
-    height: 80px;
+.redi_logo {
+  width: 80px;
+  height: 80px;
 }
 
 /*redimensionar foto*/
-.redimenFoto{
-    width: 250px;
-    height: 350px;
+.redimenFoto {
+  width: 250px;
+  height: 350px;
+}
+
+.body {
+  padding: 1;
 }
 
 /*colores pagina*/
-.lblanco{
-    color:#fff;
+.lblanco {
+  color: #fff;
 }
 
-.colorTotal{
-    background-color: #6F263D;
+.colorTotal {
+  background-color: #6F263D;
 }
-.colorBlanco{
-    background-color: #fff;
-    color: black;
+
+.colorBlanco {
+  background-color: #fff;
+  color: black;
 }
-.colorSecundario{
-    background-color: #6F263D;
-    color: #fff;
+
+.colorSecundario {
+  background-color: #6F263D;
+  color: #fff;
 }
 
 /*padding para la primera linea de la pagina*/
-.pad{
-    padding-top: 120px;
+.pad {
+  padding-top: 120px;
 }
 
-.pading{
-    padding-right: 120px;
+.pading {
+  padding-right: 120px;
 }
+
 /*justificar contenido*/
-.text-justify{
-    text-align: justify;
+.text-justify {
+  text-align: justify;
 }
 
 /*raya footer*/
-.rayita{
-    height: 3px;
-    background-color: #6F263D;
+.rayita {
+  height: 3px;
+  background-color: #6F263D;
 }
+
 /*boton*/
-
-.btn{
-    height: 50px;
-    text-align: center;
+.btn {
+  height: 50px;
+  text-align: center;
 }
 
-.borde{
-    border-radius: 10px;
+.borde {
+  border-radius: 10px;
 }
-
 
 /*------------animaciones texto--------------*/
-.title-contenido{
-    opacity: 0;
-    animation: revealText .5s forwards; 
+.title-contenido {
+  opacity: 0;
+  -webkit-animation: revealText .5s forwards;
+          animation: revealText .5s forwards;
 }
 
-.title-2{
-    animation-delay: .175s;
+.title-2 {
+  -webkit-animation-delay: .175s;
+          animation-delay: .175s;
 }
-.title-3{
-    animation-delay: .25s;
+
+.title-3 {
+  -webkit-animation-delay: .25s;
+          animation-delay: .25s;
 }
-.title-4{
-    animation-delay: .325s;
+
+.title-4 {
+  -webkit-animation-delay: .325s;
+          animation-delay: .325s;
 }
-.title-5{
-    animation-delay: .500s;
+
+.title-5 {
+  -webkit-animation-delay: .500s;
+          animation-delay: .500s;
+}
+
+@-webkit-keyframes revealText {
+  from {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 
 @keyframes revealText {
-    from{
-        transform: translateY(20px); 
-    }
-    to{
-        opacity: 1;
-        transform: none; 
-    }
+  from {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 
-
 /*------------animaciones boton--------------*/
-
 .button {
-    display: inline-block;
-    border: none;
-    width: 200px;
-    transition: all 0.5s;
-    cursor: pointer;
-    
-  }
-  
-  .button span {
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-  
-  .button span:after {
-    content: url(../img/contenido/flecha-correcta.png);
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
-  .button:hover{
-    background-color: #fff;
-  }
-  
-  .button:hover span {
-      color: #000;
-    padding-right: 25px;
-  }
-  
-  .button:hover span:after {
-      
-    opacity: 1;
-    right: 0;
-  }
+  display: inline-block;
+  border: none;
+  width: 200px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
 
+.button span {
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: url(../img/contenido/flecha-correcta.png);
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.button:hover {
+  background-color: #fff;
+}
+
+.button:hover span {
+  color: black;
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 
 /*--------------------------------*/
-
+/*# sourceMappingURL=style.css.map */
