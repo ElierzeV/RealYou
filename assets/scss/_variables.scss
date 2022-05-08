@@ -1,3 +1,17 @@
 $colorPrincipal: #6F263D;
 $colorBlanco:#fff;
 $colorNegro:black;
+$botonAnimacion:(
+    borde:none,
+    display: inline-block,
+    trans: 0.5s,
+    ancho: 200px,
+    flecha: url(../img/contenido/flecha-correcta.png)
+);
+$boton:(
+    alto:50px,
+    texto:center
+);
+$pading:(
+    pad:120px
+)

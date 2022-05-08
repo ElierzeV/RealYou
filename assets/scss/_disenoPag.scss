@@ -23,11 +23,11 @@
 
 /*padding para la primera linea de la pagina*/
 .pad{
-    padding-top: 120px;
+    padding-top: map-get($pading, pad );
 }
 
 .pading{
-    padding-right: 120px;
+    padding-right: map-get($pading, pad );
 }
 /*justificar contenido*/
 .text-justify{
@@ -42,8 +42,8 @@
 /*boton*/
 
 .btn{
-    height: 50px;
-    text-align: center;
+    height: map-get($boton , alto );
+    text-align: map-get($boton , texto );
 }
 
 .borde{

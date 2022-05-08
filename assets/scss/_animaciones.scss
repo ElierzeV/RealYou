@@ -32,27 +32,27 @@
 /*------------animaciones boton--------------*/
 
 .button {
-    display: inline-block;
-    border: none;
-    width: 200px;
-    transition: all 0.5s;
+    display: map-get($botonAnimacion, display );
+    border: map-get($botonAnimacion , borde );
+    width: map-get($botonAnimacion , ancho );
+    transition: all map-get($botonAnimacion, trans );
     cursor: pointer;
     
   }
   
   .button span {
-    display: inline-block;
+    display: map-get($botonAnimacion, display );
     position: relative;
-    transition: 0.5s;
+    transition: map-get($botonAnimacion, trans );
   }
   
   .button span:after {
-    content: url(../img/contenido/flecha-correcta.png);
+    content: map-get($botonAnimacion , flecha );
     position: absolute;
     opacity: 0;
     top: 0;
     right: -20px;
-    transition: 0.5s;
+    transition: map-get($botonAnimacion, trans );
   }
   .button:hover{
     background-color: $colorBlanco;
