@@ -1,6 +1,6 @@
 # RealYou
 
-Real you es una página desarrollada para una pyme que realiza asesorias de imagenes perzonalizadas.
+Real you es un sitio desarrollada para una pyme que realiza asesorias de imagenes perzonalizadas.
 
 
 ## Optimización CEO 
