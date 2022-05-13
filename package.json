@@ -1,0 +1,27 @@
+{
+  "name": "realyou",
+  "version": "1.0.0",
+  "description": "Real you es una página desarrollada para una pyme que realiza asesorias de imagenes perzonalizadas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss assets/scss/style.scss assets/css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElierzeV/RealYou.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElierzeV/RealYou/issues"
+  },
+  "homepage": "https://github.com/ElierzeV/RealYou#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}

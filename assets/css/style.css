@@ -2,152 +2,105 @@
 @import url("https://fonts.googleapis.com/css2?family=Belleza&display=swap");
 * {
   font-style: normal;
-  font-family: "Belleza",Arial, Helvetica, sans-serif;
-}
+  font-family: "Belleza",Arial, Helvetica, sans-serif; }
 
 html, body, footer {
-  overflow-x: hidden;
-}
+  overflow-x: hidden; }
 
 /*redimensión contenido*/
 /*REdimensionar RS*/
 .redimensionRs {
   width: 40px;
-  height: 40px;
-}
+  height: 40px; }
 
 /*redimensionar logo*/
 .redi_logo {
   width: 80px;
-  height: 80px;
-}
+  height: 80px; }
 
 /*redimensionar foto*/
 .redimenFoto {
   width: 250px;
-  height: 350px;
-}
+  height: 350px; }
 
 .body {
-  padding: 1;
-}
+  padding: 1; }
 
 /*colores pagina*/
 .lblanco {
-  color: #fff;
-}
+  color: #fff; }
 
 .colorTotal {
-  background-color: #6F263D;
-}
+  background-color: #6F263D; }
 
 .colorBlanco {
   background-color: #fff;
-  color: black;
-}
+  color: black; }
 
 .colorSecundario {
   background-color: #6F263D;
-  color: #fff;
-}
+  color: #fff; }
 
 /*padding para la primera linea de la pagina*/
 .pad {
-  padding-top: 120px;
-}
+  padding-top: 120px; }
 
 .pading {
-  padding-right: 120px;
-}
+  padding-right: 120px; }
 
 /*justificar contenido*/
 .text-justify {
-  text-align: justify;
-}
+  text-align: justify; }
 
 /*raya footer*/
 .rayita {
   height: 3px;
-  background-color: #6F263D;
-}
+  background-color: #6F263D; }
 
 /*boton*/
 .btn {
   height: 50px;
-  text-align: center;
-}
+  text-align: center; }
 
 .borde {
-  border-radius: 10px;
-}
+  border-radius: 10px; }
 
 /*------------animaciones texto--------------*/
 .title-contenido {
   opacity: 0;
-  -webkit-animation: revealText .5s forwards;
-          animation: revealText .5s forwards;
-}
+  animation: revealText .5s forwards; }
 
 .title-2 {
-  -webkit-animation-delay: .175s;
-          animation-delay: .175s;
-}
+  animation-delay: .175s; }
 
 .title-3 {
-  -webkit-animation-delay: .25s;
-          animation-delay: .25s;
-}
+  animation-delay: .25s; }
 
 .title-4 {
-  -webkit-animation-delay: .325s;
-          animation-delay: .325s;
-}
+  animation-delay: .325s; }
 
 .title-5 {
-  -webkit-animation-delay: .500s;
-          animation-delay: .500s;
-}
-
-@-webkit-keyframes revealText {
-  from {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none;
-  }
-}
+  animation-delay: .500s; }
 
 @keyframes revealText {
   from {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-  }
+    transform: translateY(20px); }
   to {
     opacity: 1;
-    -webkit-transform: none;
-            transform: none;
-  }
-}
+    transform: none; } }
 
 /*------------animaciones boton--------------*/
 .button {
   display: inline-block;
   border: none;
   width: 200px;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .button span {
   display: inline-block;
   position: relative;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
+  transition: 0.5s; }
 
 .button span:after {
   content: url(../img/contenido/flecha-correcta.png);
@@ -155,23 +108,17 @@ html, body, footer {
   opacity: 0;
   top: 0;
   right: -20px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
+  transition: 0.5s; }
 
 .button:hover {
-  background-color: #fff;
-}
+  background-color: #fff; }
 
 .button:hover span {
   color: black;
-  padding-right: 25px;
-}
+  padding-right: 25px; }
 
 .button:hover span:after {
   opacity: 1;
-  right: 0;
-}
+  right: 0; }
 
 /*--------------------------------*/
-/*# sourceMappingURL=style.css.map */
