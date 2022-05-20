@@ -1,0 +1,25 @@
+.contactFooter{
+    background-color: $colorBlanco;
+    color: $colorNegro;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    &:active{
+        color: $colorNegro;
+        transition: map-get($botonAnimacion, trans );
+    }
+    &:hover{
+        background-color: $colorBlanco;
+        color: $colorPrincipal;
+        transition: map-get($botonAnimacion, trans );
+        &:after{
+            transition: map-get($botonAnimacion, trans );
+        }
+    }
+    
+}
+.textFooter{
+    text-decoration: solid;
+    font-size: 25px;
+}

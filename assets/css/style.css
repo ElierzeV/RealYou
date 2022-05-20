@@ -122,3 +122,26 @@ html, body, footer {
   right: 0; }
 
 /*--------------------------------*/
+.animaRS:hover {
+  transform: scale(1.1); }
+
+.contactFooter {
+  background-color: #fff;
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 10px; }
+  .contactFooter:active {
+    color: black;
+    transition: 0.5s; }
+  .contactFooter:hover {
+    background-color: #fff;
+    color: #6F263D;
+    transition: 0.5s; }
+    .contactFooter:hover:after {
+      transition: 0.5s; }
+
+.textFooter {
+  text-decoration: solid;
+  font-size: 25px; }
